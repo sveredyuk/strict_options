@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'strict_options'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2016-03-05'
-  s.summary     = "Define strict attributes for options hash"
+  s.summary     = "Strict for options hash"
   s.description = "Define strict attributes for options hash"
   s.authors     = ["Volodya Sveredyuk"]
   s.email       = 'sveredyuk@gmail.com'
@@ -12,5 +12,4 @@ Gem::Specification.new do |s|
 
   # Dev gems
   s.add_development_dependency 'rspec', '~> 3.4', '>= 3.4.0'
-  s.add_development_dependency 'pry-rails'
 end

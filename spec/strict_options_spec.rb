@@ -1,5 +1,3 @@
-require 'pry-rails'
-
 class BaseProduct
   include StrictOptions
 

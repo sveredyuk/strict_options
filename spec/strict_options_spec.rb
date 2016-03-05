@@ -43,6 +43,6 @@ describe 'StrictOptions' do
     it { expect{product.full_name}.to raise_error(ArgumentError,
                                           "options :brand, :sku are missing") }
     it { expect{product.dicounted_price}.to raise_error(ArgumentError,
-                                          "options :price is missing") }
+                                          "option :price is missing") }
   end
 end

@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
 
   # Dev gems
   s.add_development_dependency 'rspec', '~> 3.4', '>= 3.4.0'
+  s.add_development_dependency 'pry-rails'
 end

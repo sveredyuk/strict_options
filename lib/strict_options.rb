@@ -1,5 +1,7 @@
+require 'pry-rails'
+
 module StrictOptions
-  def strict_options!(opts)
+  def strict_options!(*opts)
     @missings = []
     opts.each { |opt| @missings << ":#{opt}" unless @options[opt] }
 

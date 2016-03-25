@@ -102,6 +102,7 @@ end
 
 calculate_sale_price
 #=> #<PriceError: No price!>
+```
 
 ## TODO
 * Some improvements ? =)

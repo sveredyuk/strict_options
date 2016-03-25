@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'strict_options'
-  s.version     = '0.2.0'
+  s.version     = '0.2.1'
   s.date        = '2016-03-05'
   s.summary     = "Strict for options hash"
   s.description = "Define strict attributes for options hash"

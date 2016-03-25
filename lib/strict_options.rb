@@ -1,5 +1,3 @@
-require 'pry-rails'
-
 module StrictOptions
   def strict_options!(*opts, exception_class: ArgumentError,
                              exception_message: nil)

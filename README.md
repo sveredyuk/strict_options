@@ -97,7 +97,7 @@ class PriceError < StandardError; end
 
 def calculate_sale_price
   strict_options!(:price, exception_class: PriceError,
-                            exception_message: "No price!")
+                        exception_message: "No price!")
 end
 
 calculate_sale_price

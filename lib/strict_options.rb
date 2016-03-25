@@ -1,9 +1,12 @@
+require 'pry-rails'
+
 module StrictOptions
-  def strict_options!(*opts)
+  def strict_options!(*opts, exception_class: ArgumentError,
+                             exception_message: nil)
     @missings = []
     opts.each { |opt| @missings << ":#{opt}" unless @options[opt] }
-
-    raise ArgumentError, "option#{s} #{@missings.join(', ')} #{is_or_are} missing" if @missings.size > 0
+    msg = exception_message || "option#{s} #{@missings.join(', ')} #{is_or_are} missing"
+    raise exception_class, msg if @missings.size > 0
   end
 
   private
